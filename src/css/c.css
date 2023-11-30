@@ -1,0 +1,200 @@
+/* .contact {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .text-c {
+    color: #c0bdbd;
+    font-size: 24px;
+    margin-top: 20px;
+    text-decoration: underline;
+  }
+  
+  .t-c {
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .head {
+    color: green;
+    font-size: 20px;
+  }
+  
+ 
+  .t-c > p:not(.head) {
+    margin-right: 20px; 
+  }
+   */
+
+
+   .contact {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    justify-content: flex-start;
+  }
+  
+  .text-c {
+    /* color: #c0bdbd; */
+    color: #212121;
+    font-size: 24px;
+    margin-top: 20px;
+    /* text-decoration: underline; */
+  }
+  
+  .t-c {
+    color: rgb(87, 84, 84);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column; /* Change to column to align vertically */
+    align-items: center; /* Center the content horizontally */
+    margin-top: 20px;
+  }
+  
+  .head {
+    color: green;
+    font-size: 20px;
+  }
+  
+  /* Add margin to create space between elements */
+  .contact-info {
+    display: flex;
+    flex-direction: row; /* Align children horizontally */
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust the spacing as needed */
+  }
+
+  /* Style for the icons */
+  .icon {
+    font-size: 20px; /* Adjust the icon size as needed */
+    margin-right: 8px; /* Add space between icon and text */
+  }
+
+  /* Style for the name and profession */
+  .name-profession {
+    display: flex;
+    align-items: center; /* Center the content horizontally */
+    margin-top: 10px; /* Add space between the name and profession */
+  }
+  
+  /* Style for the name */
+  .name {
+    font-size: 20px; /* Adjust the name font size as needed */
+    font-weight: bold; /* Make the name bold */
+    margin-right: 20px; /* Add space between the name and profession */
+  }
+
+  /* Style for the profession */
+  .profession {
+    font-size: 16px; 
+    margin-right: 10px;/* Adjust the profession font size as needed */
+  }
+
+  .social-icons{
+    /* width: 20%; */
+    font-size: 24px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   cursor: pointer; /* Add space between the contact info and social icons */
+
+  }
+
+  .social-icon {
+    /* font-size: 24px;  */
+    margin-right: 15px; /* Add space between icons */
+  }
+
+  .download-cv-button{
+    background: transparent;
+  color: rgb(220, 139, 139);
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  margin-top: 150px; 
+  align-self: flex-end; /* Align the button to the right */
+  margin-right: 20px; 
+  }
+
+  
+
+  /* Original CSS for large screens */
+.contact {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  justify-content: flex-start;
+ 
+}
+
+/* ... (rest of your CSS) */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .contact {
+    height: auto; /* Remove fixed height for responsiveness */
+  }
+
+  .text-c {
+    font-size: 20px; /* Decrease font size for smaller screens */
+    margin-top: 10px; /* Reduce top margin */
+  }
+
+  .t-c {
+    margin-top: 10px; /* Reduce top margin */
+  }
+
+  .contact-info {
+    flex-direction: column; /* Stack contact items vertically on small screens */
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+  }
+
+  .contact-item {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add spacing between contact items */
+  }
+
+  .icon {
+    font-size: 18px; /* Decrease icon size */
+    margin-right: 8px; /* Add space between icon and text */
+  }
+
+  .social-icons {
+    margin-top: 10px; /* Reduce top margin for social icons */
+  }
+
+  .download-cv-button {
+    margin-top: 20px; /* Increase top margin for the button */
+    align-self: center; /* Center the button horizontally */
+    margin-right: 0; /* Remove right margin */
+  }
+}
+
+.download-cv-button:hover {
+  color: green; /* Text color on hover */
+  border-color: green; /* Border color on hover */
+}

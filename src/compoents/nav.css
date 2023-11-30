@@ -1,0 +1,118 @@
+
+
+           body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* z-index: 1; */
+            /* z-index: 999;  */
+          }
+          
+          nav {
+            /* background:linear-gradient(45deg, rgb(247, 213, 213), rgb(206, 245, 250), rgb(238, 211, 211),  rgb(184, 233, 239)); */
+            background: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between; /* To center horizontally */
+            align-items: center; /* To center vertically */
+            padding: 0 20px;
+            /* Add some padding for space around the menu icon */
+            z-index: 999; 
+          }
+          
+          nav ul {
+            list-style-type: none;
+            margin: auto;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;
+            cursor: pointer; /* Center vertically */
+          }
+
+
+          nav li {
+            margin: 0 20px;
+          }
+          
+          nav a {
+            text-decoration: none;
+            color: #f8f4f4;
+            font-size: 18px;
+            transition: color 0.3s ease;
+          }
+          
+          nav a:hover {
+            color: #019a06; 
+          
+          
+          }
+          
+          /* Style the menu icon */
+          .menu-icon {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: white;
+          }
+          
+          /* Style the menu icon when hovered (optional) */
+          .menu-icon:hover {
+            color: #00bcd4; /* Change color on hover */
+          }
+          
+
+  /* Existing styles ... */
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    justify-content: flex-end; /* Move the menu icon to the right */
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* Place the menu on the right side */
+    width: 50%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%); /* Move the menu off-screen initially */
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .mobile-menu.show {
+    transform: translateX(0); /* Bring the menu on-screen when it's open */
+  }
+
+  /* Styles for the menu items */
+  .mobile-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-menu li {
+    margin: 10px 0; /* Add some vertical space between items */
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: #f8f4f4;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-menu a:hover {
+    color: #019a06;
+  }
+}

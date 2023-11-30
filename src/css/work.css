@@ -1,0 +1,18 @@
+.work{
+    background-color: #fffdfd;
+  }
+
+  .text-w{
+    /* color: #c0bdbd; */
+    color: #000000;
+    font-size: 24px;
+    /* margin-bottom: 20px; */
+    /* margin-top: 20px; */
+    /* margin-top: -300px; */
+    /* text-decoration: underline; */
+  }
+
+.syntax{
+    width:80%;
+    background-color: #000000;
+}

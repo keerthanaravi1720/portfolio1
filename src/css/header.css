@@ -1,0 +1,151 @@
+/* Add this to your existing CSS file or create a new one */
+/* 
+.section.about {
+  background: linear-gradient(to top, rgb(252, 201, 201), rgb(245, 222, 225),
+  rgb(252, 233, 201), white);
+  display: flex; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+.text {
+  padding: 20px;
+  text-align: left; 
+  width: 50%;
+  margin-top: 50px; 
+  z-index: 1; 
+}
+
+.image {
+  text-align: right; 
+  width: 50%;
+  padding-right: 20px;
+  margin-top: -200px;
+  z-index: 1; 
+}
+
+h2 {
+  color: rgb(181, 116, 136);
+  font-family: sans-serif;
+}
+
+
+
+.additional-text {
+  font-size: 12px;
+  margin-top: 10px; 
+}
+ */
+
+
+
+
+.section.about {
+  /* background: black; */
+  background-color: white;
+  /* background:linear-gradient(45deg, rgb(206, 245, 250), rgb(247, 213, 213), rgb(206, 245, 250), rgb(238, 211, 211),  rgb(184, 233, 239)); */
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.image {
+  text-align: right;
+  width: 50%;
+  padding-right: 20px;
+  margin-top: -250px;
+  /* z-index: 1; */
+}
+
+.card {
+  background-color:transparent; /* Card background color */
+  border-radius: 10px; /* Rounded corners */
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  */
+  padding: 20px; /* Add padding to the card */
+  width: 30%;
+  /* z-index: 2; */
+  margin-right:500px;
+  margin-top: 50px;
+}
+
+h2 {
+  /* color: rgb(208, 205, 205); */
+  color: black;
+ /* font-family: 'Times New Roman', Times, serif; */
+  font-size: 30px;
+}
+
+/* Add this to your existing CSS file or create a new one */
+
+.additional-text {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: justify;
+  /* color: rgb(192, 184, 184); */
+  color: black;
+}
+
+.text-h2{
+  margin-top: 100px;
+  /* text-decoration: underline; */
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* color: rgb(191, 189, 189); */
+  color: black;
+}
+
+/* Add this to your existing CSS file or create a new one */
+
+/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+  .section.about {
+    flex-direction: column;
+    height: auto; /* Remove fixed height for responsiveness */
+  }
+
+  .image {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center; /* Center the content within the image div */
+    padding: 0; /* Remove right padding */
+    margin-top: 10px;
+  }
+
+  .card {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .h2{
+    font-size: 20px;
+  }
+
+  /* Add additional styles for small screens if needed */
+}
+
+/* Media query for screens smaller than 576px (you can adjust the breakpoint as needed) */
+@media (max-width: 576px) {
+  .section.about {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    
+  }
+
+  .card {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  /* Place the image above the card */
+  .image {
+    order: 1;
+    /* Change the order to 1 to place it below the card */
+  }
+
+  .card {
+    order: 2; /* Change the order to 2 to place it above the image */
+  }
+}

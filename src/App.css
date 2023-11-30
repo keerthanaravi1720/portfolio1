@@ -1,0 +1,80 @@
+/* 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  nav {
+    background-color: #e3dada;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #00bcd4;
+  }
+   */
+/*   */
+   
+
+
+   /* src/App.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+  
+  .section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ 
+/*   
+  .contact {
+    background-color: #cdd1d3;
+    color: white;
+  } */
+
+
+  /* scroll.css */
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  .active {
+    color: green !important;
+  }
+  
